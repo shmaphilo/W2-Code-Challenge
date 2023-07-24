@@ -12,7 +12,7 @@ const App=()=>{
 
   const fetchTransactions = async () => {
     try {
-      const response = await fetch("/api/transactions"); 
+      const response = await fetch('http://localhost:3000/transactions'); 
       if (response.ok) {
         const data = await response.json();
         setTransactions(data);
@@ -52,4 +52,3 @@ const App=()=>{
 };
 
 export default App;
-

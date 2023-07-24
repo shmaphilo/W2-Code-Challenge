@@ -67,4 +67,3 @@ const TransactionForm = ({ addTransaction }) => {
 };
 
 export default TransactionForm;
-
