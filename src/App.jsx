@@ -12,7 +12,7 @@ const App=()=>{
 
   const fetchTransactions = async () => {
     try {
-      const response = await fetch("http://localhost:3000/transactions"); 
+      const response = await fetch("https://api.npoint.io/1042caab8da3f04cff23/transactions"); 
       if (response.ok) {
         const data = await response.json();
         setTransactions(data);
